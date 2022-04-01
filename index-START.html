@@ -2,49 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sea Escapes</title>
+  <title>sea.escapes</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class ="title">SEA.ESCAPES
+  <video autoplay muted loop id="myVideo">
+    <source src="underwater.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <div class ="title">sea.escapes
   </div>
 
-  <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">waves</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">seagulls</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">wind</span>
-    </div>
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">waves</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">seagulls</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">wind</span>
+        </div>
 
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">whales</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">underwater</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-  </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">whales</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">underwater</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">seal</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">wave break</span>
+        </div>
+
+      </div>
 
   <audio data-key="65" src="sounds/waves.mp3"></audio>
   <audio data-key="83" src="sounds/seagull.mp3"></audio>
@@ -52,8 +57,8 @@
   <audio data-key="70" src="sounds/openhat.wav"></audio>
   <audio data-key="71" src="sounds/whale.mp3"></audio>
   <audio data-key="72" src="sounds/underwater.mp3"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="74" src="sounds/seal.mp3"></audio>
+  <audio data-key="75" src="sounds/breaking_waves.mp3"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
@@ -80,6 +85,6 @@ window.addEventListener('keydown', playSound);
 
 </script>
 
-
+</div>
 </body>
 </html>
